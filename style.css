@@ -8,7 +8,7 @@ body {
 header {
   display: flex;
   height: 48px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 8px;
   align-items: center;
   top: 0px;
@@ -26,6 +26,14 @@ header div {
   align-items: center;
 }
 
+.logo {
+  margin-left: 4px;
+}
+
+.logo svg {
+  margin-right: 4px;
+}
+
 .pfp {
   max-width: 32px;
   width: 32px;
@@ -38,16 +46,16 @@ header div {
 .menu {
   display: flex;
   justify-content: flex-end;
+  flex-grow: 2;
 }
 
 .search-bar {
-  margin-right: 30%;
+  margin-left: 82px;
 }
-
 input {
   border: none;
   background-color: #eaf1fb;
-  width: 40vw;
+  width: 720px;
   height: 48px;
   border-radius: 48px;
   padding-left: 5%;
@@ -55,7 +63,7 @@ input {
 
 .body {
   display: grid;
-  grid-template-columns: 13.75% 83% 3.25%;
+  grid-template-columns: 255px 1fr 55px;
   grid-template-rows: 91vh;
   gap: 0px 0px;
 }
@@ -67,7 +75,15 @@ input {
 }
 
 .sidebar {
-  padding: 8px;
+  padding: 8px 16px 8px 0px;
+}
+
+.sidebar div {
+  margin-bottom: 16px;
+}
+
+.filters div {
+  margin-bottom: 0px;
 }
 
 button {
@@ -75,15 +91,41 @@ button {
   background-color: rgb(194, 231, 255);
   border: none;
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 15px;
 }
 
 .compose {
   width: 100%;
+  margin-left: 8px;
 }
 
 .item {
   display: flex;
+  height: 32px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.item p {
+  margin: 0px;
+  line-height: 32px;
+}
+
+.icon {
+  margin-left: 27px;
+}
+
+.filter-title {
+  margin-left: 20px;
+}
+
+.notif {
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .active {
