@@ -49,6 +49,10 @@ header div {
   flex-grow: 2;
 }
 
+.menu svg {
+  padding: 10px;
+}
+
 .search-bar {
   margin-left: 82px;
 }
@@ -86,12 +90,22 @@ input {
   margin-bottom: 0px;
 }
 
-button {
-  width: 140px;
+.dropdown-btn {
+  border: none;
+  background: none;
+  font: inherit;
+  padding: 0px;
+}
+
+.compose-btn {
+  height: 56px;
+  width: 142px;
   background-color: rgb(194, 231, 255);
   border: none;
   padding: 20px;
   border-radius: 15px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .compose {
@@ -130,4 +144,17 @@ button {
 
 .active {
   background-color: #d3e3fd;
+}
+
+.show {
+  display: block !important;
+}
+
+.dropdown {
+  display: none;
+}
+
+.labels {
+  margin-left: 27px;
+  margin-top: 30px;
 }

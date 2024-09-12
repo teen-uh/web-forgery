@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="script.js" type="text/javascript"></script>
     <title>Document</title>
   </head>
   <body>
@@ -76,7 +77,7 @@
     <div class="body">
       <div class="sidebar">
         <div class="compose">
-          <button type="button"><span></span>Compose</button>
+          <button class="compose-btn" type="button"><span></span>Compose</button>
         </div>
         <div class="filters">
           <div class="item active">
@@ -124,11 +125,40 @@
               <p>6</p>
             </div>
           </div>
+          <button class="dropdown-btn item" onclick="dropdown()" type="button">
+            <div class="icon"></div>
+            <div class="filter-title">
+              <p>Starred</p>
+            </div>
+          </button>
+          <div class="dropdown" id="dropdown">
+            <div class="item">
+              <div class="icon"></div>
+              <div class="filter-title">
+                <p>Important</p>
+              </div>
+              <div class="notif">
+                <p>6</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="icon"></div>
+              <div class="filter-title">
+                <p>Chats</p>
+              </div>
+              <div class="notif">
+                <p>6</p>
+              </div>
+            </div>
+          </div>
+          <div class="labels">
+            <p>Labels</p>
+            <div class="plus"></div>
+          </div>
         </div>
       </div>
       <div class="inbox"><p>hello</p></div>
       <div class="widgets"></div>
     </div>
-    <footer></footer>
   </body>
 </html>
